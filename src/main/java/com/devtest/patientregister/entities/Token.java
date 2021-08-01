@@ -26,10 +26,8 @@ public class Token {
 	
 	@ManyToOne(fetch = FetchType.EAGER, optional = true, cascade = CascadeType.ALL)
 	@JoinColumn(name = "id_enfermeiro")
-	@JsonIgnore
 	private Enfermeiro enfermeiro;
 	@ManyToOne(fetch = FetchType.EAGER, optional = true, cascade = CascadeType.ALL)
-	@JsonIgnore
 	@JoinColumn(name = "id_medico")
 	private Medico medico;
 	
